@@ -3,15 +3,15 @@
 #include <ESPmDNS.h>
 #include <WiFiClient.h>
 
-const char* ssid = "............";
-const char* password = "..............";
+const char* ssid = ".....";
+const char* password = "......";
 
 // TCP server at port 80 will respond to HTTP requests
 WiFiServer server(80);
 
 void setup(void)
 {  
-    Serial.begin(115200);
+    Serial.begin(9600);
 
     // Connect to WiFi network
     WiFi.begin(ssid, password);
